@@ -78,3 +78,4 @@ const reducer = state => ({ ...state, loading: true })
 
 ## TODO:
  - add types for typescript
+ - publish the package to npm
