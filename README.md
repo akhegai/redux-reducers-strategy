@@ -75,3 +75,6 @@ instead of
 ```js
 const reducer = state => ({ ...state, loading: true })
 ```
+
+## TODO:
+ - add types for typescript
