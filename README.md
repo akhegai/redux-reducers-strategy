@@ -8,7 +8,7 @@ This library is not published on NPM.
 
 ## Usage example
 
-```
+```js
 import makeReducerHandler from 'redux-reducers-strategy'
 
 const initialState = {
