@@ -19,7 +19,7 @@ export interface Reducer<S = {}> {
 
 /**
  *
- * @param reducerFilters Array of Reducer
+ * @param reducers Array of Reducer
  * @param initialState Initial Redux state
  */
 export function makeReducerHandler<S>(
