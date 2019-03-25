@@ -1,0 +1,25 @@
+{
+  "name": "redux-reducers-strategy",
+  "version": "1.0.0",
+  "description": "A package that makes state reducing a bit cleaner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhegai/redux-reducers-strategy.git"
+  },
+  "keywords": [
+    "redux",
+    "reducers",
+    "strategy",
+    "flux"
+  ],
+  "author": "akhegai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhegai/redux-reducers-strategy/issues"
+  },
+  "homepage": "https://github.com/akhegai/redux-reducers-strategy#readme"
+}
