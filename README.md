@@ -1,6 +1,6 @@
 # redux reducers strategy
 
-An utils that keeps the reducers clean, yet still powerful.
+Utils that keeps the redux reducers clean, yet still powerful.
 
 ## Note
 
