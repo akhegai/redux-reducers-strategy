@@ -6,7 +6,7 @@ type Action = { type: any; [extraProps: string]: any }
 /**
  * Function filtering actions
  */
-export type ReducerFilter = (actionType: ActionType, action: Action) => boolean
+export type ReducerFilter = (actionType: any, action: Action) => boolean
 
 /**
  * Reducer type
