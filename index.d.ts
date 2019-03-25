@@ -12,9 +12,9 @@ export type ReducerFilter = (actionType: any, action: Action) => boolean
  * Reducer type
  */
 export interface Reducer<S = {}> {
-  type: any
+  type?: any
   reduce: (state: S, action: Action) => Partial<S>
-  filter: ReducerFilter
+  filter?: ReducerFilter
 }
 
 /**
