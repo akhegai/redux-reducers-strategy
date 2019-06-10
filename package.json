@@ -2,10 +2,10 @@
   "name": "redux-reducers-strategy",
   "version": "1.0.0",
   "description": "A package that makes state reducing a bit cleaner",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/akhegai/redux-reducers-strategy/issues"
   },
-  "homepage": "https://github.com/akhegai/redux-reducers-strategy#readme"
+  "homepage": "https://github.com/akhegai/redux-reducers-strategy#readme",
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  }
 }
