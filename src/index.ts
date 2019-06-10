@@ -11,7 +11,7 @@ export interface Action {
 /**
  * Reducer type
  */
-export type Reducer<State> = (state: State, action?: Action) => State
+export type Reducer<State> = (state: State, action?: Action) => Partial<State>
 
 /**
  * Function filtering actions
@@ -44,5 +44,5 @@ export const makeReducerHandler = <State>(reducerFilters: ReducerFilter<State>[]
   action: Action
 ): State => {
   const reducerFilter = findReducer(reducerFilters, action)
-  return reducerFilter ? Object.assign({}, reducerFilter.reduce(state, action)) : state
+  return reducerFilter ? Object.assign({}, state, reducerFilter.reduce(state, action)) : state
 }
