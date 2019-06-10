@@ -11,7 +11,7 @@ export interface Action {
 /**
  * Reducer type
  */
-export type Reducer<State> = (state: State, action?: Action) => Partial<State>
+export type Reducer<State> = (state: State, action: Action) => Partial<State>
 
 /**
  * Function filtering actions
