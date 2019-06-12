@@ -23,7 +23,7 @@ export type ReducerFilter<State> = {
 }
 
 const findReducer = <State>(reducerFilters: ReducerFilter<State>[], action: Action) => {
-  return reducerFilters.find(it => {
+  return reducerFilters.filter(it => {
     if (it.filter) {
       return it.filter(action.type, action)
     }
@@ -44,5 +44,5 @@ export const makeReducerHandler = <State>(reducerFilters: ReducerFilter<State>[]
   action: Action
 ): State => {
   const reducerFilter = findReducer(reducerFilters, action)
-  return reducerFilter ? Object.assign({}, state, reducerFilter.reduce(state, action)) : state
+  return reducerFilter.reduce((acc, cur) => Object.assign({}, acc, cur.reduce(state, action)), state)
 }
