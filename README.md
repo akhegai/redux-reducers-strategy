@@ -2,9 +2,9 @@
 
 Utils that keeps the redux reducers clean, yet still powerful.
 
-## Note
+## Install
 
-This library is not published on NPM.
+`npm i redux-reducers-strategy`
 
 ## Usage example
 
@@ -75,7 +75,3 @@ instead of
 ```js
 const reducer = state => ({ ...state, loading: true })
 ```
-
-## TODO:
-- [x] add types for typescript
-- [ ] publish the package to npm
